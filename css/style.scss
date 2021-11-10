@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,500;1,700&display=swap");
+* {
+  font-family: Roboto;
+}
+.bg-e {
+  background-color: #eee;
+}
+.scrol-top{
+  bottom: 25px;
+  right: 25px;
+  cursor: pointer;
+  z-index: 300;
+  display: none;
+  transition:display .5s;
+}
+main {
+  .slider {
+    .carousel-caption {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .categories {
+    .category-box {
+      transition: 0.5s;
+      background-size: 100%;
+      &:hover {
+        box-shadow: 0px 0px 12px #999;
+        transform: translateY(-5px);
+      }
+      &.cat1 {
+        background-image: url(../images//thumb-1.jpg);
+      }
+      &.cat2 {
+        background-image: url(../images//thumb-2.jpg);
+      }
+      &.cat3 {
+        background-image: url(../images//thumb-3.jpg);
+      }
+      &.cat4 {
+        background-image: url(../images//thumb-4.jpg);
+      }
+      &.cat5 {
+        background-image: url(../images//thumb-5.jpg);
+      }
+      &.cat6 {
+        background-image: url(../images//thumb-6.jpg);
+      }
+    }
+  }
+  .advertise {
+    img {
+      transition: 0.5s;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .page {
+    .page-head {
+      background-image: url(../images/slider-1.jpg);
+    }
+  }
+  .product {
+    img.active {
+      border-color: #444 !important;
+    }
+  }
+}
