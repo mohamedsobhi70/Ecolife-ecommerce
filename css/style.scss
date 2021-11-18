@@ -5,13 +5,43 @@
 .bg-e {
   background-color: #eee;
 }
-.scrol-top{
+.scrol-top {
   bottom: 25px;
   right: 25px;
   cursor: pointer;
   z-index: 300;
   display: none;
-  transition:display .5s;
+  transition: display 0.5s;
+}
+header {
+  .top-header {
+    .menu {
+      &:hover {
+        & > .sub-menu {
+          display: block;
+        }
+      }
+      .sub-menu {
+        transition: all 0.3s ease-in-out;
+        display: none;
+        z-index: 2000;
+        top: 100%;
+        li{
+          transition: 0.3s ease-in-out;
+          &:hover {
+            margin-left: 3px;
+          }
+        }
+        a {
+          transition: 0.3s ease-in-out;
+          color: #000;
+          &:hover {
+            color: #f0f;
+          }
+        }
+      }
+    }
+  }
 }
 main {
   .slider {

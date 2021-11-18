@@ -39,6 +39,6 @@ scrolBtn.addEventListener("click", () => {
 let productDetails = document.querySelectorAll("button.product-details");
 productDetails.forEach((it) => {
   it.addEventListener("click", function () {
-    location.href = "../pages/productdetails.html";
+    location.href = "pages/productdetails.html";
   });
 });
