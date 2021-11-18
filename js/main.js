@@ -17,24 +17,28 @@ for (let i = 0; i < oldPrice.length; i++) {
 let scrolBtn = document.querySelector(".scrol-top");
 window.onscroll = function () {
   if (window.scrollY > 300) {
-    scrolBtn.style.display = "inline-block";
+    if (scrolBtn) {
+      scrolBtn.style.display = "inline-block";
     document.querySelector(".navbar").classList.add("fixed-top");
     document.querySelector(".navbar").classList.add("bg-white");
+    }
   } else {
+   if (scrolBtn) {
     scrolBtn.style.display = "none";
     document.querySelector(".navbar").classList.remove("fixed-top");
     document.querySelector(".navbar").classList.remove("bg-white");
+   }
   }
 };
-
-console.log(document.querySelector(".navbar").classList);
-scrolBtn.addEventListener("click", () => {
-  window.scrollTo({
-    left: 0,
-    top: 0,
-    behavior: "smooth",
+if (scrolBtn) {
+  scrolBtn.addEventListener("click", () => {
+    window.scrollTo({
+      left: 0,
+      top: 0,
+      behavior: "smooth",
+    });
   });
-});
+}
 // end scrol
 let productDetails = document.querySelectorAll("button.product-details");
 productDetails.forEach((it) => {
