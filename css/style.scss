@@ -13,8 +13,8 @@
   display: none;
   transition: display 0.5s;
 }
-.border-green{
-  border-bottom: 3px solid #198754 ;
+.border-green {
+  border-bottom: 3px solid #198754;
 }
 header {
   .top-header {
@@ -24,6 +24,7 @@ header {
           display: block;
         }
       }
+
       .sub-menu {
         transition: all 0.3s ease-in-out;
         display: none;
@@ -43,6 +44,20 @@ header {
           }
         }
       }
+    }
+  }
+  .nav-item.cart-icon {
+    &:hover {
+      .cart-box {
+        visibility: visible;
+      }
+    }
+    .cart-box {
+      visibility: hidden;
+      width: 200px;
+      right: 0;
+      top: 100%;
+      z-index: 233;
     }
   }
 }

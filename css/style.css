@@ -52,6 +52,18 @@ header .top-header .menu .sub-menu a:hover {
   color: #f0f;
 }
 
+header .nav-item.cart-icon:hover .cart-box {
+  visibility: visible;
+}
+
+header .nav-item.cart-icon .cart-box {
+  visibility: hidden;
+  width: 200px;
+  right: 0;
+  top: 100%;
+  z-index: 233;
+}
+
 main .slider .carousel-caption {
   top: 50%;
   -webkit-transform: translateY(-50%);
