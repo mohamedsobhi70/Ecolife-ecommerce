@@ -60,6 +60,11 @@ header {
       z-index: 233;
     }
   }
+  @media (min-width:992px){
+    .shop-dropdown{
+      width: 800px;
+    }
+  }
 }
 main {
   .slider {

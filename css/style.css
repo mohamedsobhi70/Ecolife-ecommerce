@@ -64,6 +64,12 @@ header .nav-item.cart-icon .cart-box {
   z-index: 233;
 }
 
+@media (min-width: 992px) {
+  header .shop-dropdown {
+    width: 800px;
+  }
+}
+
 main .slider .carousel-caption {
   top: 50%;
   -webkit-transform: translateY(-50%);
