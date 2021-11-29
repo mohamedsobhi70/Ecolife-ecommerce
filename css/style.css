@@ -17,6 +17,26 @@
   transition: display 0.5s;
 }
 
+input::-webkit-input-placeholder {
+  font-size: 0.75rem;
+  color: #868cdf !important;
+}
+
+input:-ms-input-placeholder {
+  font-size: 0.75rem;
+  color: #868cdf !important;
+}
+
+input::-ms-input-placeholder {
+  font-size: 0.75rem;
+  color: #868cdf !important;
+}
+
+input::placeholder {
+  font-size: 0.75rem;
+  color: #868cdf !important;
+}
+
 .border-green {
   border-bottom: 3px solid #198754;
 }
